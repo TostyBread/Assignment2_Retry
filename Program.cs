@@ -13,7 +13,7 @@ namespace Assignment2_Retry
             string name;
             string id;
             //students
-            //moduleLead
+           
         }
 
         class Student
