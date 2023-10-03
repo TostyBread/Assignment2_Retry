@@ -16,26 +16,33 @@ namespace Assignment2_Retry
             //moduleLead
         }
 
-        class Student
+        class Student //List of Students
         {
-
+            //Private member fields
             private string name;
             private string id;
 
-            public Student(string Name, string ID)
+            //Constructor
+            public Student(string name, string id)
             {
-                name = Name;
-                id = ID;
+                this.name = name;
+                this.id = id;
             }
 
-            public string GetID
+            //Public member methods
+            public string GetID()
             {
-                get { return id; }
+                return id;
             }
 
-            public string GetName
+            public string GetName()
             {
-                get { return name; }
+                return name;
+            }
+
+            public void Print() //Print student id and name
+            {
+                Console.WriteLine($"{id} - {name}");
             }
         }
 
@@ -47,10 +54,10 @@ namespace Assignment2_Retry
             int salary;
         }
 
-        static void Main(string[] args)
+        static void Main(string[] args) //For Testing purposes, since the VPL homework checker will run something like these
         {
-            Student Stu_obj = new Student("0220001003", "Gerald Wong");
-            //Stu_obj.
+            Student student1 = new Student("Gerald Wong", "0220001003"); //Grabs Student ID
+            student1.Print();
         }
     }
 }
