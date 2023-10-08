@@ -14,18 +14,11 @@ namespace Assignment2_Retry
         {
             Student student1 = new Student("Gerald Wong", "0220001003"); //sets Student ID
 
-            // Access the student's name and ID using Get methods
-            string Sname = student1.GetName();
-            string id = student1.GetID();
-
             //Print the student's information
             student1.Print();
 
 
             Teacher teacher1 = new Teacher("Gerald", "10203", "Lecturer", 100);// Create a Teacher instance
-
-            // Access the teacher's name using the getter method
-            string Tname = teacher1.GetName();
 
             // Print the teacher's information
             teacher1.Print();
