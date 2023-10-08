@@ -9,70 +9,6 @@ namespace Assignment2_Retry
 {
     internal class Program
     {
-        class Module
-        {
-            string name;
-            string id;
-            //students
-            //moduleLead
-        }
-
-        class Student //List of Students
-        {
-            //Private member fields
-            private string Sname;
-            private string id;
-
-            //Constructor
-            public Student(string Sname, string id)
-            {
-                this.Sname = Sname;
-                this.id = id;
-            }
-
-            //Public member methods
-            public string GetID()
-            {
-                return id;
-            }
-
-            public string GetName()
-            {
-                return Sname;
-            }
-
-            public void Print() //Print student id and name
-            {
-                Console.WriteLine($"{id} - {Sname}");
-            }
-        }
-
-        class Teacher
-        {
-            //Private member fields
-            private string Tname;
-            private string id;
-            private string title;
-            private int salary;
-
-            public Teacher(string Tname, string id, string title, int salary)
-            {
-                this.Tname = Tname;
-                this.id = id;
-                this.title = title;
-                this.salary = salary;
-            }
-            // Getter for Name
-            public string GetName()
-            {
-                return Tname;
-            }
-
-            public void Print()//Print Teacher's details
-            {
-                Console.WriteLine($"{id} - {Tname} - {title} - {salary}");
-            }
-        }
 
         static void Main(string[] args) //For Testing purposes, since the VPL homework checker will run something like these
         {
@@ -93,6 +29,71 @@ namespace Assignment2_Retry
 
             // Print the teacher's information
             teacher1.Print();
+        }
+    }
+
+    class Module
+    {
+        string name;
+        string id;
+        //students
+        //moduleLead
+    }
+
+    class Student //List of Students
+    {
+        //Private member fields
+        private string Sname;
+        private string id;
+
+        //Constructor
+        public Student(string Sname, string id)
+        {
+            this.Sname = Sname;
+            this.id = id;
+        }
+
+        //Public member methods
+        public string GetID()
+        {
+            return id;
+        }
+
+        public string GetName()
+        {
+            return Sname;
+        }
+
+        public void Print() //Print student id and name
+        {
+            Console.WriteLine($"{id} - {Sname}");
+        }
+    }
+
+    class Teacher
+    {
+        //Private member fields
+        private string Tname;
+        private string id;
+        private string title;
+        private int salary;
+
+        public Teacher(string Tname, string id, string title, int salary)
+        {
+            this.Tname = Tname;
+            this.id = id;
+            this.title = title;
+            this.salary = salary;
+        }
+        // Getter for Name
+        public string GetName()
+        {
+            return Tname;
+        }
+
+        public void Print()//Print Teacher's details
+        {
+            Console.WriteLine($"{id} - {Tname} - {title} - {salary}");
         }
     }
 }
